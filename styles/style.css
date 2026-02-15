@@ -48,7 +48,7 @@ span {
   height: 760px;
   justify-content: center;
 }
-.hero-img {
+.hero-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,6 +95,7 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 50px 200px 120px 200px;
 }
 
 .about-description {
@@ -123,4 +124,102 @@ span {
 .about-data p {
   font-size: 16px;
   padding-top: 16px;
+}
+
+/* why choose section */
+
+.choose {
+  padding: 120px 200px;
+  background-color: #230e3d;
+}
+
+.choose h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 48px;
+}
+.choose-cards-container > * {
+  background-color: #351165;
+  padding: 40px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.choose-cards-container > * img {
+  width: 50px;
+  padding-bottom: 20px;
+}
+.choose-cards-container > * h2 {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+.choose-cards-container > * p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* grid layout*/
+.choose .heading {
+  grid-area: heading;
+}
+.premium-card {
+  grid-area: premium;
+}
+.mobile-card {
+  grid-area: mobile;
+}
+.global-card {
+  grid-area: global;
+}
+.exclusive-card {
+  grid-area: exclusive;
+}
+.rich-card {
+  grid-area: rich;
+}
+.choose-cards-container {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "premium mobile  mobile"
+    "premium global  global"
+    "exclusive  exclusive rich";
+}
+
+/* featured episodes */
+
+/* host info */
+.host-container h1 {
+  font-size: 48px;
+  padding-top: 120px;
+  text-align: center;
+}
+.host-info-container {
+  display: flex;
+  margin: 40px 200px 120px 200px;
+  gap: 24px;
+  background-color: #250d44;
+  padding: 40px;
+  border-radius: 30px;
+}
+.host-info h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.host-info p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.host-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.host-socials img {
+  border: 1px solid #533c72;
+  width: 40px;
+  border-radius: 50%;
+  padding: 10px;
 }
