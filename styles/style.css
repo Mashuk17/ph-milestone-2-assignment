@@ -188,11 +188,51 @@ span {
 }
 
 /* featured episodes */
+.featured-episodes-container {
+  margin: 120px 200px;
+}
+.featured-episodes-container h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.featured-episodes-cards-container {
+  display: flex;
+  gap: 30px;
+}
+.cards {
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #250d44;
+}
+.card-info {
+  padding: 24px;
+}
+iframe {
+  width: 380px;
+  height: 214px;
+}
+.card-info h2 {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+.card-info p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.time {
+  display: flex;
+  color: #00ff88;
+  margin-top: 12px;
+  gap: 6px;
+}
 
 /* host info */
 .host-container h1 {
   font-size: 48px;
-  padding-top: 120px;
+
   text-align: center;
 }
 .host-info-container {
