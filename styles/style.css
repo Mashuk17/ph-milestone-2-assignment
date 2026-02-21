@@ -8,16 +8,6 @@ body {
   color: #ffffff;
   font-family: "Inter", sans-serif;
 }
-
-/* nav bar */
-nav {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 1.5rem 10%;
-  border-bottom: 1px solid rgba(82, 46, 131, 0.4);
-  align-items: center;
-}
 span {
   background-image: linear-gradient(
     20deg,
@@ -28,6 +18,23 @@ span {
   -webkit-background-clip: text;
   color: transparent;
 }
+.btn-primary {
+  background: linear-gradient(20deg, #f7e93f 15%, #fb09b4 50%, #9100f8 90%);
+  font-size: 16px;
+  padding: 12.5px 40px 12.5px 16px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: 600;
+}
+/* nav bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 10%;
+  border-bottom: 1px solid rgba(82, 46, 131, 0.4);
+  align-items: center;
+}
+
 .nav-links ul {
   display: flex;
   gap: 2rem;
@@ -40,14 +47,7 @@ span {
   text-decoration: none;
   color: #ffffff;
 }
-.btn-primary {
-  background: linear-gradient(20deg, #f7e93f 15%, #fb09b4 50%, #9100f8 90%);
-  font-size: 16px;
-  padding: 12.5px 40px 12.5px 16px;
-  border-radius: 25px;
-  color: #ffffff;
-  font-weight: 600;
-}
+
 nav img {
   display: none;
 }
@@ -170,8 +170,16 @@ nav img {
   padding-top: 16px;
 }
 @media (max-width: 576px) {
+  .about {
+    margin: 0px auto 40px auto;
+  }
+  .about-description h1 {
+    padding-top: 40px;
+  }
   .about-data-container {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
+    gap: 40px;
   }
   .about-description {
     margin: 20px;
@@ -214,6 +222,16 @@ nav img {
 .choose-cards-container > * p {
   font-size: 16px;
   color: #ffffff;
+}
+@media (max-width: 576px) {
+  .choose {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .choose h1 {
+    margin: 0px 20px;
+    font-size: 32px;
+  }
 }
 
 /* grid layout*/
@@ -300,6 +318,9 @@ iframe {
 }
 
 @media (max-width: 576px) {
+  .featured-episodes-container {
+    margin: 40px auto;
+  }
   .featured-episodes-cards-container {
     flex-wrap: wrap;
     gap: 16px;
