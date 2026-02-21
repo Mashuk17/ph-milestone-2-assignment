@@ -25,6 +25,12 @@ span {
   border-radius: 25px;
   color: #ffffff;
   font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  transform: translatey(-4px);
+  box-shadow: 0 8px 20px rgba(27, 169, 27, 0.298);
 }
 /* nav bar */
 nav {
